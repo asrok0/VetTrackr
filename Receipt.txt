@@ -1,0 +1,14 @@
+VetTrackr Generated Receipt
+-----------------------------------------------------------------
+Owner Name: Aaron Srok
+Owner Contact: 2628257669
+
+Animal Name: Frank
+
+Date of Admittance: 12/12/2024
+
+Animal Age: 8
+Animal Weight: 85
+Treatment(s): Shots
+-----------------------------------------------------------------
+Thank you or choosing VetTrackr!

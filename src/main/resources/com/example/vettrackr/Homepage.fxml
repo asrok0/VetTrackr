@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="homeBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vettrackr.HomepageController">
+   <top>
+      <Label fx:id="homeTopBar" prefHeight="17.0" prefWidth="634.0" style="-fx-background-color: lightgray; -fx-alignment: center; -fx-border-color: gray; -fx-border-width: 1; -fx-font-size: 14; -fx-font: Hei;" text="VetTrackr - Home" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Hei Regular" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <center>
+      <AnchorPane fx:id="homeAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="homeSearchLabel" layoutX="74.0" layoutY="182.0" text="Animal Search">
+               <font>
+                  <Font name="Hei Regular" size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="homeSearchTextField" layoutX="174.0" layoutY="177.0" prefHeight="26.0" prefWidth="287.0" />
+            <Button fx:id="homeNewButton" layoutX="214.0" layoutY="234.0" mnemonicParsing="false" onAction="#goToNewAnimalEntryClick" prefHeight="53.0" prefWidth="172.0" style="-fx-background-color: lightblue;" text="New Animal Entry">
+               <font>
+                  <Font name="Hei Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="homeTitleLabel" layoutX="47.0" layoutY="77.0" text="VetTrackr - Veterinarian Office Tracking">
+               <font>
+                  <Font name="Lava Devanagari Heavy" size="24.0" />
+               </font>
+            </Label>
+            <Button fx:id="homeSearchButton" layoutX="461.0" layoutY="177.0" mnemonicParsing="false" onAction="#searchAnimalClick" prefHeight="25.0" prefWidth="65.0" style="-fx-background-color: lightblue;" text="Search">
+               <font>
+                  <Font name="Hei Regular" size="14.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </center>
+</BorderPane>

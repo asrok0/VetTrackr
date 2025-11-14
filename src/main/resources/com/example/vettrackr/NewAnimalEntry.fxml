@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.text.Font?>
+
+<BorderPane fx:id="newAnimalBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.vettrackr.NewAnimalEntryController">
+   <top>
+      <Label fx:id="newAnimalTopBar" prefHeight="17.0" prefWidth="663.0" style="-fx-alignment: center; -fx-background-color: lightgray; -fx-border-color: gray; -fx-border-image-width: 1;" text="VetTrackr - New Animal Entry" BorderPane.alignment="CENTER">
+         <font>
+            <Font name="Hei Regular" size="14.0" />
+         </font>
+      </Label>
+   </top>
+   <left>
+      <AnchorPane fx:id="newAnimalAnchorPane" prefHeight="200.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <Label fx:id="newAnimalNameLabel" layoutX="151.0" layoutY="16.0" prefHeight="23.0" prefWidth="85.0" text="Animal Name:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalNameText" layoutX="240.0" layoutY="14.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="newAnimalDateLabel" layoutX="117.0" layoutY="58.0" text="Date of Admittance:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalDateText" layoutX="240.0" layoutY="54.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="newAnimalAgeLabel" layoutX="163.0" layoutY="98.0" text="Animal Age:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalAgeText" layoutX="240.0" layoutY="94.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="newAnimalWeightLabel" layoutX="143.0" layoutY="138.0" text="Animal Weight:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalWeightText" layoutX="240.0" layoutY="134.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="newAnimalTreatmentLabel" layoutX="152.0" layoutY="178.0" text="Treatment(s):">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalTreatmentText" layoutX="240.0" layoutY="174.0" prefHeight="25.0" prefWidth="250.0" />
+            <Button fx:id="newAnimalSendButton" layoutX="222.0" layoutY="304.0" mnemonicParsing="false" onAction="#newAnimalSendButtonClick" prefHeight="52.0" prefWidth="156.0" style="-fx-background-color: lightblue;" text="Send Information">
+               <font>
+                  <Font name="Hei Regular" size="14.0" />
+               </font>
+            </Button>
+            <Label fx:id="newAnimalOwnerLabel" layoutX="155.0" layoutY="218.0" text="Owner Name:" />
+            <TextField fx:id="newAnimalOwnerText" layoutX="240.0" layoutY="214.0" prefHeight="25.0" prefWidth="250.0" />
+            <Label fx:id="newAnimalContactLabel" layoutX="138.0" layoutY="258.0" text="Owner Contact:">
+               <font>
+                  <Font size="14.0" />
+               </font>
+            </Label>
+            <TextField fx:id="newAnimalContactText" layoutX="240.0" layoutY="254.0" prefHeight="25.0" prefWidth="250.0" />
+         </children>
+      </AnchorPane>
+   </left>
+</BorderPane>
